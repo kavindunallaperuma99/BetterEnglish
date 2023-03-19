@@ -26,7 +26,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .padding(.top, 400.0)
                     .frame(width: 400, alignment: .leading)
-                
+               
             }
                 
             Spacer()
