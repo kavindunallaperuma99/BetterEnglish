@@ -14,64 +14,75 @@ struct signupPage: View {
     @State var isLoggingIn: Bool = false
     
     var body: some View {
-        VStack{
+        VStack {
             Text("Create an account")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .padding(.bottom, 30)
-                .frame(width: 400, alignment: .leading)
+
             
             Text("Username")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom, -12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.bottom, -30)
+             
+                
+            
             TextField("username", text: $email)
-                .padding()
+                .padding(.all)
                 .background(Color.white)
                 .cornerRadius(5.0)
-                .frame(width: 400, height: 75)
+                .frame(height: 75)
                 .shadow(radius: 2)
-                .padding(.bottom, 5)
+                .padding(.all, 12.0)
             
             Text("Email Address")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom, -12)
-            
-            
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -10)
+                .padding(.bottom, -30)
+
             TextField("Enter your email", text: $email)
-                .padding()
+                .padding(.all)
                 .background(Color.white)
                 .cornerRadius(5.0)
-                .frame(width: 400, height: 75)
+                .frame(height: 75)
                 .shadow(radius: 2)
-            
-             
+                .padding(.all, 12.0)
             
             Text("Create a password")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom, -12)
-            
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -10)
+                .padding(.bottom, -30)
             
             SecureField("Password", text: $password)
-                .padding()
+                .padding(.all)
                 .background(Color.white)
                 .cornerRadius(5.0)
-                .frame(width: 400, height: 75)
+                .frame(height: 75)
                 .shadow(radius: 2)
+                .padding(.all, 12.0)
             
             Text("Confirm your password")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom, -12)
-            
-            
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -10)
+                .padding(.bottom, -30)
             
             
             SecureField("Enter your password again", text: $password)
-                .padding()
+                .padding(.all)
                 .background(Color.white)
                 .cornerRadius(5.0)
-                .frame(width: 400, height: 75)
+                .frame(height: 75)
                 .shadow(radius: 2)
-                .padding(.bottom, 30)
+                .padding(.all, 12.0)
+                .padding(.bottom, 50)
+            
+            
             
             
             Button(action: {
@@ -82,20 +93,14 @@ struct signupPage: View {
                     .fontWeight(.bold)
                     .padding()
             }
-            .frame(width: 400, height: 60)
+            .frame(maxWidth: .infinity, alignment: .center)
             .background(Color.black)
             .cornerRadius(5.0)
             .shadow(radius: 2)
-            
-        
-            
-  
+            .padding(.all, 12.0)
           
         }
-        
-
     }
-
 }
 
 struct signupPage_Previews: PreviewProvider {

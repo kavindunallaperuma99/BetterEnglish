@@ -106,8 +106,8 @@
 				89F7CD1E29C5B19A005BFA22 /* ContentView.swift */,
 				89F7CD4829C5FF7F005BFA22 /* loginPage.swift */,
 				89F7CD4C29C6024D005BFA22 /* signupPage.swift */,
-				89F7CD4E29C61ABD005BFA22 /* homePage.swift */,
 				89F7CD5029C63226005BFA22 /* chatUI.swift */,
+				89F7CD4E29C61ABD005BFA22 /* homePage.swift */,
 				89F7CD2029C5B19B005BFA22 /* Assets.xcassets */,
 				89F7CD2229C5B19B005BFA22 /* Preview Content */,
 			);

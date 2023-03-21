@@ -24,16 +24,20 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
-                    .padding(.top, 400.0)
-                    .frame(width: 400, alignment: .leading)
+                    .padding(.all, 12.0)
+                    .padding(.top, 330)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
                
             }
                 
             Spacer()
             
             Text("Points Eraned")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom,200)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -10)
+                .padding(.bottom, 100)
             
             
             Button {
@@ -43,10 +47,12 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .padding()
             }
-            .frame(width: 400, height: 60)
+            .frame(maxWidth: .infinity, alignment: .center)
             .background(Color.black)
             .cornerRadius(5.0)
             .shadow(radius: 2)
+            .padding(.all, 12.0)
+            .padding(.bottom, -15.0)
             
             
             HStack{
@@ -58,11 +64,12 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 20, height: 20)
                 }
-                .frame(width: 190, height: 60)
-                .background(Color.blue)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .frame(height: 60)
+                .background(Color.black)
                 .cornerRadius(5.0)
                 .shadow(radius: 2)
-                .padding(.horizontal, 6)
+                .padding(.all, 12.0)
                 
                 Button(action: {
                     
@@ -72,15 +79,14 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 20, height: 20)
                 }
-                .frame(width: 190, height: 60)
-                .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.626))
+                .frame(maxWidth: .infinity, alignment: .center)
+                .frame(height: 60)
+                .background(Color.black)
                 .cornerRadius(5.0)
                 .shadow(radius: 2)
-                .padding(.horizontal, 6)
+                .padding(.all, 12.0)
             
-            
-            
-            
+    
             
         }
         

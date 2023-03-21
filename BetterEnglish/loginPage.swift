@@ -14,42 +14,51 @@ struct loginPage: View {
     
     var body: some View {
         VStack {
+            
             Text("Log in")
+                .padding(.top, 50)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
-                .padding(.bottom, 60)
-                .frame(width: 400, alignment: .leading)
+                .padding(.bottom, 30)
             
             Text("Email Address")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom, -12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -10)
+                .padding(.bottom, -30)
             
             
             TextField("Email", text: $email)
-                .padding()
+                .padding(.all)
                 .background(Color.white)
                 .cornerRadius(5.0)
-                .frame(width: 400, height: 75)
+                .frame(height: 75)
                 .shadow(radius: 2)
-                .padding(.bottom, 5)
+                .padding(.all, 12.0)
             
             Text("Password")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom, -12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -10)
+                .padding(.bottom, -30)
             
             
             SecureField("Password", text: $password)
-                .padding()
+                .padding(.all)
                 .background(Color.white)
                 .cornerRadius(5.0)
-                .frame(width: 400, height: 75)
+                .frame(height: 75)
                 .shadow(radius: 2)
+                .padding(.all, 12.0)
             
             
             Text("Forgot password?")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom, 25)
-                .padding(.top, -12) 
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -30)
+                .padding(.bottom, 60)
             
             
             Button {
@@ -59,19 +68,22 @@ struct loginPage: View {
                     .fontWeight(.bold)
                     .padding()
             }
-            .frame(width: 400, height: 60)
+            .frame(maxWidth: .infinity, alignment: .center)
             .background(Color.black)
             .cornerRadius(5.0)
             .shadow(radius: 2)
+            .padding(.all, 12.0)
             
             Text("Don't you have an account?")
-                .frame(width: 400, alignment: .leading)
-                .padding(.bottom,50)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, 12.0)
+                .padding(.top, -25)
+                .padding(.bottom, 60)
             
             
             Text("Or login with")
                 .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.bottom, 50)
+                .padding(.bottom, 30)
             
             
             HStack{
@@ -83,11 +95,12 @@ struct loginPage: View {
                         .resizable()
                         .frame(width: 20, height: 20)
                 }
-                .frame(width: 120, height: 60)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .frame(height: 60)
                 .background(Color.white)
                 .cornerRadius(5.0)
                 .shadow(radius: 2)
-                .padding(.horizontal, 6)
+                .padding(.leading, 12.0)
                 
                 Button(action: {
                     // Handle Facebook authentication
@@ -97,12 +110,13 @@ struct loginPage: View {
                         .frame(width: 20, height: 20)
                     
                 }
-                .padding(.horizontal, 8)
-                .frame(width: 120, height: 60)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .frame(height: 60)
                 .background(Color.white)
                 .cornerRadius(5.0)
                 .shadow(radius: 2)
-                .padding(.horizontal, 6)
+
+
                 
                 Button(action: {
                     // Handle Apple authentication
@@ -111,14 +125,15 @@ struct loginPage: View {
                         .resizable()
                         .frame(width: 20, height: 20)
                 }
-                .padding(.horizontal, 8)
-                .frame(width: 120, height: 60)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .frame(height: 60)
                 .background(Color.white)
                 .cornerRadius(5.0)
                 .shadow(radius: 2)
-                .padding(.horizontal, 6)
+                .padding(.trailing, 12.0)
+
             }
-            .padding(.bottom, 20)
+            .padding(.bottom, 100)
             
         }
     }
