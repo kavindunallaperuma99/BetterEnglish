@@ -69,7 +69,7 @@ struct ContentView: View {
                 .background(Color.black)
                 .cornerRadius(5.0)
                 .shadow(radius: 2)
-                .padding(.all, 12.0)
+                .padding([.top, .leading, .bottom], 12.0)
                 
                 Button(action: {
                     
@@ -84,7 +84,7 @@ struct ContentView: View {
                 .background(Color.black)
                 .cornerRadius(5.0)
                 .shadow(radius: 2)
-                .padding(.all, 12.0)
+                .padding([.top, .bottom, .trailing], 12.0)
             
     
             

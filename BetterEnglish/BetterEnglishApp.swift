@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct BetterEnglishApp: App {
+    init() {
+            FirebaseApp.configure()
+        }
+
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            loginPage()
+       
         }
     }
 }
