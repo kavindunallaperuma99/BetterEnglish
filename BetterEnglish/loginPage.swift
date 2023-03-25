@@ -54,6 +54,15 @@ struct loginPage: View {
                     .shadow(radius: 2)
                     .padding(.all, 12.0)
                 
+             /*   NavigationLink(destination: ForgotPasswordView()) {
+                    Text("Forgot Password?")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.black)
+                        .padding(.all, 12.0)
+                        .padding(.top, -25)
+                        .padding(.bottom, 60)
+                }
+                */
                 Text(errorMessage)
                     .foregroundColor(.red)
                     .fixedSize(horizontal: false, vertical: true)
@@ -65,7 +74,7 @@ struct loginPage: View {
                         if let error = error {
                             errorMessage = error.localizedDescription
                         } else {
-                            UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: ContentView())
+                            UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: HomeView())
                             UIApplication.shared.windows.first?.makeKeyAndVisible()
                         }
                     }
@@ -83,6 +92,7 @@ struct loginPage: View {
                 
                 NavigationLink(destination: signupPage()) {
                     Text("Don't have an account?")
+                        .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundColor(.black)
                         .padding(.all, 12.0)

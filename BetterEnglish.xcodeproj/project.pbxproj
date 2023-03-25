@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89F7536629CE83F50050950B /* CreateUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7536529CE83F50050950B /* CreateUserNameView.swift */; };
+		89F7536829CE85C20050950B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7536729CE85C20050950B /* HomeView.swift */; };
+		89F7536A29CE86260050950B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7536929CE86260050950B /* ChatView.swift */; };
+		89F7536C29CE86970050950B /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7536B29CE86970050950B /* ForgotPasswordView.swift */; };
+		89F7536E29CE875B0050950B /* ForgetPasswordVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7536D29CE875B0050950B /* ForgetPasswordVerificationView.swift */; };
+		89F7537029CE88C50050950B /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7536F29CE88C50050950B /* ResetPasswordView.swift */; };
 		89F7CD1D29C5B19A005BFA22 /* BetterEnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CD1C29C5B19A005BFA22 /* BetterEnglishApp.swift */; };
 		89F7CD1F29C5B19A005BFA22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CD1E29C5B19A005BFA22 /* ContentView.swift */; };
 		89F7CD2129C5B19B005BFA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F7CD2029C5B19B005BFA22 /* Assets.xcassets */; };
@@ -16,8 +22,6 @@
 		89F7CD3A29C5B19B005BFA22 /* BetterEnglishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CD3929C5B19B005BFA22 /* BetterEnglishUITestsLaunchTests.swift */; };
 		89F7CD4929C5FF7F005BFA22 /* loginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CD4829C5FF7F005BFA22 /* loginPage.swift */; };
 		89F7CD4D29C6024D005BFA22 /* signupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CD4C29C6024D005BFA22 /* signupPage.swift */; };
-		89F7CD4F29C61ABD005BFA22 /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CD4E29C61ABD005BFA22 /* homePage.swift */; };
-		89F7CD5129C63226005BFA22 /* chatUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CD5029C63226005BFA22 /* chatUI.swift */; };
 		89F8508029CA289A009D5EB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89F8507F29CA289A009D5EB1 /* GoogleService-Info.plist */; };
 		89F8508129CA289A009D5EB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89F8507F29CA289A009D5EB1 /* GoogleService-Info.plist */; };
 		89F8508229CA289A009D5EB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89F8507F29CA289A009D5EB1 /* GoogleService-Info.plist */; };
@@ -68,6 +72,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89F7536529CE83F50050950B /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
+		89F7536729CE85C20050950B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		89F7536929CE86260050950B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		89F7536B29CE86970050950B /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		89F7536D29CE875B0050950B /* ForgetPasswordVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVerificationView.swift; sourceTree = "<group>"; };
+		89F7536F29CE88C50050950B /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		89F7CD1929C5B19A005BFA22 /* BetterEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F7CD1C29C5B19A005BFA22 /* BetterEnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterEnglishApp.swift; sourceTree = "<group>"; };
 		89F7CD1E29C5B19A005BFA22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,8 +90,6 @@
 		89F7CD3929C5B19B005BFA22 /* BetterEnglishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterEnglishUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89F7CD4829C5FF7F005BFA22 /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
 		89F7CD4C29C6024D005BFA22 /* signupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupPage.swift; sourceTree = "<group>"; };
-		89F7CD4E29C61ABD005BFA22 /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
-		89F7CD5029C63226005BFA22 /* chatUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatUI.swift; sourceTree = "<group>"; };
 		89F8507F29CA289A009D5EB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89F850BA29CA5127009D5EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,8 +174,12 @@
 				89F7CD1E29C5B19A005BFA22 /* ContentView.swift */,
 				89F7CD4829C5FF7F005BFA22 /* loginPage.swift */,
 				89F7CD4C29C6024D005BFA22 /* signupPage.swift */,
-				89F7CD5029C63226005BFA22 /* chatUI.swift */,
-				89F7CD4E29C61ABD005BFA22 /* homePage.swift */,
+				89F7536729CE85C20050950B /* HomeView.swift */,
+				89F7536929CE86260050950B /* ChatView.swift */,
+				89F7536529CE83F50050950B /* CreateUserNameView.swift */,
+				89F7536B29CE86970050950B /* ForgotPasswordView.swift */,
+				89F7536D29CE875B0050950B /* ForgetPasswordVerificationView.swift */,
+				89F7536F29CE88C50050950B /* ResetPasswordView.swift */,
 				89F7CD2029C5B19B005BFA22 /* Assets.xcassets */,
 				89F8507F29CA289A009D5EB1 /* GoogleService-Info.plist */,
 				89F7CD2229C5B19B005BFA22 /* Preview Content */,
@@ -365,10 +377,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F7CD4F29C61ABD005BFA22 /* homePage.swift in Sources */,
-				89F7CD5129C63226005BFA22 /* chatUI.swift in Sources */,
+				89F7536E29CE875B0050950B /* ForgetPasswordVerificationView.swift in Sources */,
+				89F7536629CE83F50050950B /* CreateUserNameView.swift in Sources */,
+				89F7536829CE85C20050950B /* HomeView.swift in Sources */,
+				89F7536C29CE86970050950B /* ForgotPasswordView.swift in Sources */,
 				89F7CD1F29C5B19A005BFA22 /* ContentView.swift in Sources */,
+				89F7536A29CE86260050950B /* ChatView.swift in Sources */,
 				89F7CD1D29C5B19A005BFA22 /* BetterEnglishApp.swift in Sources */,
+				89F7537029CE88C50050950B /* ResetPasswordView.swift in Sources */,
 				89F7CD4D29C6024D005BFA22 /* signupPage.swift in Sources */,
 				89F7CD4929C5FF7F005BFA22 /* loginPage.swift in Sources */,
 			);

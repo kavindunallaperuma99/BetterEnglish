@@ -168,7 +168,8 @@ struct signupPage: View {
                                     print(error.localizedDescription)
                                 } else {
                                     ref.child(user.uid).setValue(["email": email.lowercased(), "username": username.lowercased()])
-                                    self.signupSuccessful = true
+                                    UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: loginPage())
+                                    UIApplication.shared.windows.first?.makeKeyAndVisible()
                                 }
                             })
                         }
